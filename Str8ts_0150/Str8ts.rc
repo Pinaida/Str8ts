@@ -1,0 +1,695 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Str8ts.rc2""                       // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standardkomponenten\r\n"
+    "#include ""l.deu\\afxprint.rc""        // Ressourcen für Drucken/Seitenansicht\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Str8ts.ico"
+
+IDR_STR8TSTYPE          ICON                    "res\\Str8tsDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_TOOLBAR1            BITMAP                  "res\\Toolbar1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 22, 21
+BEGIN
+    BUTTON      ID_DATEI_NEU
+    BUTTON      ID_DATEI_VORLAGE
+    BUTTON      ID_DATEI_OEFFNEN
+    BUTTON      ID_DATEI_SAVE
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_EXTRA_FREEZE
+    BUTTON      ID_SOLVE_DISPLAY
+    BUTTON      ID_SOLVE_AUTO_ENTER
+    BUTTON      ID_EXTRA_AUSBLEND
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_BUTTON32812
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tStrg+N",                ID_DATEI_NEU
+        MENUITEM "Öffnen von Vorlage",          ID_DATEI_VORLAGE
+        MENUITEM "Öffnen",                      ID_DATEI_OEFFNEN
+        MENUITEM SEPARATOR
+        MENUITEM "Speichern",                   ID_DATEI_SAVE
+        MENUITEM "Speichern unter",             ID_DATEI_SAVE_U
+        MENUITEM SEPARATOR
+        MENUITEM "Kommentar",                   ID_DATEI_COMMENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tStrg+P",         ID_FILE_PRINT
+        MENUITEM "Sei&tenansicht",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Drucker&einrichtung...",      ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Letzte Datei",                ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Bearbeiten"
+    BEGIN
+        MENUITEM "&Rückgängig\tStrg+Z",         ID_EDIT_UNDO
+        MENUITEM "Wiederherstellen",            ID_EDIT_REDO
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",               ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Extras"
+    BEGIN
+        MENUITEM "Einfrieren (Alt-F)",          ID_EXTRA_FREEZE
+        MENUITEM "Ausblendmodus (Alt-D)",       ID_EXTRA_AUSBLEND
+        MENUITEM SEPARATOR
+        MENUITEM "Protokoll löschen",           ID_EXTRA_LOGDEL
+        MENUITEM "Auftauen",                    ID_EXTRA_MELT
+        MENUITEM "Nochmal (Alt-N)",             ID_EXTRA_AGAIN
+        MENUITEM "Alles einblenden",            ID_EXTRA_EINBLEND
+        MENUITEM "Auflösen",                    ID_EXTRA_SOLVE
+        MENUITEM "Korrigieren",                 ID_EXTRA_CHECK
+        MENUITEM "Pause",                       ID_TIME_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Farben",                      ID_EXTRA_COLOR
+        MENUITEM "Einstellungen",               ID_EXTRA_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Vom Bildschirm",              ID_CAPTURE
+    END
+    POPUP "Lösung"
+    BEGIN
+        MENUITEM "Mögliche Zahlen (Alt-H)",     ID_SOLVE_DISPLAY
+        MENUITEM "Auto-Eingabe (Alt-A)",        ID_SOLVE_AUTO_ENTER
+        MENUITEM "Sure Candidates",             ID_SOLVE_SURE_CAND
+        MENUITEM "Single",                      ID_SOLVE_SINGLE
+        MENUITEM "Range Check",                 ID_SOLVE_RANGE_CHECK
+        MENUITEM "Stranded Digits",             ID_SOLVE_STRANDED
+        MENUITEM "Split Compartments",          ID_SPLIT_COMPARTMENTS
+        MENUITEM "Mind The Gap",                ID_SOLVE_MIND_GAP
+        MENUITEM "Naked Pair",                  ID_SOLVE_NAKED_PAIR
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "Inf&o über Str8ts...",        ID_APP_ABOUT
+    END
+END
+
+IDR_KONTEXT1 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Ausblenden",                  ID_X_SUPPR
+        MENUITEM "Feld lösen",                  ID_X_SOLVE
+        MENUITEM "Frieren/Tauen",               ID_X_FR_ME
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "A",            ID_SOLVE_AUTO_ENTER,    VIRTKEY, ALT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EXTRA_AUSBLEND,      VIRTKEY, ALT, NOINVERT
+    "F",            ID_EXTRA_FREEZE,        VIRTKEY, ALT, NOINVERT
+    "H",            ID_SOLVE_DISPLAY,       VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_EXTRA_AGAIN,         VIRTKEY, ALT, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info über Str8ts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,5,5,21,20
+    LTEXT           "Line1",IDC_INFO_LINE1,35,5,135,8,SS_NOPREFIX
+    LTEXT           "Line2",IDC_INFO_LINE2,5,30,225,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STR8TS_FORM DIALOG 0, 0, 271, 196
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SUPPRESS DIALOG 0, 0, 82, 141
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ausblenden"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "1 ausblenden",IDC_SUPPR_1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,5,60,10
+    CONTROL         "2 ausblenden",IDC_SUPPR_2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,15,60,10
+    CONTROL         "3 ausblenden",IDC_SUPPR_3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,25,60,10
+    CONTROL         "4 ausblenden",IDC_SUPPR_4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,35,60,10
+    CONTROL         "5 ausblenden",IDC_SUPPR_5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,45,60,10
+    CONTROL         "6 ausblenden",IDC_SUPPR_6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,55,60,10
+    CONTROL         "8 ausblenden",IDC_SUPPR_8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,75,60,10
+    CONTROL         "7 ausblenden",IDC_SUPPR_7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,65,60,10
+    CONTROL         "9 ausblenden",IDC_SUPPR_9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,85,60,10
+    PUSHBUTTON      "alle einblenden",IDC_SUPPR_NONE,5,100,65,15
+    PUSHBUTTON      "OK",IDC_SUPPR_OK,5,120,65,14
+END
+
+IDD_COMMENT DIALOG 0, 0, 272, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kommentar eingeben"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENT,10,15,250,14,ES_AUTOHSCROLL
+    CONTROL         "1 leicht",IDC_STUFE1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,60,60,10
+    CONTROL         "2 mittel",IDC_STUFE2,"Button",BS_AUTORADIOBUTTON,15,70,60,10
+    CONTROL         "3 schwer",IDC_STUFE3,"Button",BS_AUTORADIOBUTTON,15,80,60,10
+    CONTROL         "4 teuflisch",IDC_STUFE4,"Button",BS_AUTORADIOBUTTON,15,90,60,10
+    CONTROL         "5 extrem",IDC_STUFE5,"Button",BS_AUTORADIOBUTTON,15,100,60,10
+    PUSHBUTTON      "Abbrechen",IDCANCEL,215,85,50,14,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,215,105,50,14
+    GROUPBOX        "Schwierigkeit",IDC_STATIC,5,45,75,74
+    GROUPBOX        "Bemerkung",IDC_STATIC,5,5,260,30
+    GROUPBOX        "Geraten",IDC_STATIC,95,45,40,30
+    COMBOBOX        IDC_GERATEN,100,55,30,85,CBS_DROPDOWN | WS_TABSTOP
+END
+
+IDD_COLOR DIALOG 0, 0, 222, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Farbeinstellung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,170,130,45,19
+    PUSHBUTTON      "Abbrechen",IDCANCEL,120,130,45,19
+    PUSHBUTTON      "Feld 1",IDC_COLOR_F1,5,30,55,20
+    PUSHBUTTON      "Hintergrund",IDC_COLOR_BG,5,5,55,20
+    PUSHBUTTON      "Aktives Feld",IDC_COLOR_F3,5,80,55,20
+    PUSHBUTTON      "Text Fest",IDC_COLOR_T2,5,130,55,20
+    PUSHBUTTON      "ColorShow",IDC_COLOR_SHOW,70,5,145,120
+    PUSHBUTTON      "Text Normal",IDC_COLOR_T1,5,105,55,20
+    PUSHBUTTON      "Feld 2",IDC_COLOR_F2,5,55,55,20
+    PUSHBUTTON      "Standard",IDC_COL_RESET,70,130,45,19
+END
+
+IDD_SETTINGS DIALOG 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Einstellungen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,55,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,130,75,50,14
+    GROUPBOX        "Link zur Str8ts Website",IDC_STATIC,5,5,175,30
+    EDITTEXT        IDC_WEB_LINK,10,15,165,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Standard-Lösungshilfen",IDC_DEFAULT_SOLVER,5,40,90,14
+    CONTROL         "Fieldsize 10x10",IDC_FIELD_SIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,64,10
+END
+
+IDD_DEFAULT_SOLVER DIALOG 0, 0, 167, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stranded Digit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,135,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,105,155,50,14
+    LTEXT           "Show Candidates",IDC_STATIC,5,20,56,8
+    LTEXT           "Stufe",IDC_STATIC,5,5,18,8
+    LTEXT           "Auto Entry",IDC_STATIC,5,35,34,8
+    LTEXT           "0",IDC_STATIC,71,6,8,8
+    LTEXT           "1",IDC_STATIC,85,5,8,8
+    LTEXT           "2",IDC_STATIC,100,5,8,8
+    LTEXT           "3",IDC_STATIC,115,6,8,8
+    LTEXT           "4",IDC_STATIC,131,6,8,8
+    LTEXT           "5",IDC_STATIC,145,5,8,8
+    CONTROL         "",IDC_MZ0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,20,10,10
+    CONTROL         "",IDC_MZ1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,20,10,10
+    CONTROL         "",IDC_MZ2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,20,10,10
+    CONTROL         "",IDC_MZ3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,20,10,10
+    CONTROL         "",IDC_MZ4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,20,10,10
+    CONTROL         "",IDC_MZ5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,20,10,10
+    CONTROL         "",IDC_AE0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,35,10,10
+    CONTROL         "",IDC_AE1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,35,10,10
+    CONTROL         "",IDC_AE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,35,10,10
+    CONTROL         "",IDC_AE3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,35,10,10
+    CONTROL         "",IDC_AE4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,35,10,10
+    CONTROL         "",IDC_AE5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,35,10,10
+    LTEXT           "Range check",IDC_STATIC,5,50,44,8
+    LTEXT           "Single",IDC_STATIC,5,65,30,8
+    LTEXT           "Stranded Digit",IDC_STATIC,5,80,50,10
+    CONTROL         "",IDC_RC0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,50,10,10
+    CONTROL         "",IDC_RC1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,50,10,10
+    CONTROL         "",IDC_RC2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,50,10,10
+    CONTROL         "",IDC_RC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,50,10,10
+    CONTROL         "",IDC_RC4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,50,10,10
+    CONTROL         "",IDC_RC5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,50,10,10
+    CONTROL         "",IDC_SI0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,65,10,10
+    CONTROL         "",IDC_SI1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,65,10,10
+    CONTROL         "",IDC_SI2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,65,10,10
+    CONTROL         "",IDC_SI3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,65,10,10
+    CONTROL         "",IDC_SI4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,65,10,10
+    CONTROL         "",IDC_SI5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,65,10,10
+    CONTROL         "",IDC_SD0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,80,10,10
+    CONTROL         "",IDC_SD1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,80,10,10
+    CONTROL         "",IDC_SD2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,80,10,10
+    CONTROL         "",IDC_SD3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,80,10,10
+    CONTROL         "",IDC_SD4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,80,10,10
+    CONTROL         "",IDC_SD5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,80,10,10
+    LTEXT           "Sure Candidates",IDC_STATIC,5,95,55,10
+    CONTROL         "",IDC_SC0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,95,10,10
+    CONTROL         "",IDC_SC1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,95,10,10
+    CONTROL         "",IDC_SC2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,95,10,10
+    CONTROL         "",IDC_SC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,95,10,10
+    CONTROL         "",IDC_SC4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,95,10,10
+    CONTROL         "",IDC_SC5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,95,10,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,1
+ PRODUCTVERSION 0,0,1,49
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "pinaida@web.de"
+            VALUE "CompanyName", "Pinaida Technologies"
+            VALUE "FileDescription", "Str8ts V01.50/2022-07-28"
+            VALUE "FileVersion", "0, 0, 0, 1"
+            VALUE "InternalName", "Str8ts"
+            VALUE "LegalCopyright", "(C) 2021 Ingenieurbüro Hahn"
+            VALUE "OriginalFilename", "Str8ts.exe"
+            VALUE "ProductName", "Str8ts"
+            VALUE "ProductVersion", "0.0.1.50"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_STR8TS_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_SUPPRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 75
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_COMMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DEFAULT_SOLVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMMENT DLGINIT
+BEGIN
+    IDC_GERATEN, 0x403, 2, 0
+0x0030, 
+    IDC_GERATEN, 0x403, 2, 0
+0x0031, 
+    IDC_GERATEN, 0x403, 2, 0
+0x0032, 
+    IDC_GERATEN, 0x403, 2, 0
+0x0033, 
+    IDC_GERATEN, 0x403, 2, 0
+0x0034, 
+    IDC_GERATEN, 0x403, 2, 0
+0x0035, 
+    IDC_GERATEN, 0x403, 2, 0
+0x0036, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_TADA                WAVE                    "res\\tada.wav"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Str8ts\n\nStr8ts\n\n\nStr8ts.Document\nStr8ts Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Str8ts"
+    AFX_IDS_IDLEMESSAGE     "Bereit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "ER"
+    ID_INDICATOR_CAPS       "UF"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "RF"
+    ID_INDICATOR_OVR        "ÜB"
+    ID_INDICATOR_REC        "MA"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Erstellt ein neues Dokument.\nNeu"
+    ID_FILE_OPEN            "Öffnet ein bestehendes Dokument.\nÖffnen"
+    ID_FILE_CLOSE           "Schließt das aktive Dokument.\nSchließen"
+    ID_FILE_SAVE_AS         "Speichert das aktive Dokument unter neuem Namen.\nSpeichern unter"
+    ID_FILE_PAGE_SETUP      "Ändert die Druckoptionen.\nSeite einrichten"
+    ID_FILE_PRINT_SETUP     "Ändert den Drucker und die Druckoptionen.\nDruckereinrichtung"
+    ID_FILE_PRINT           "Druckt das aktive Dokument.\nDrucken"
+    ID_FILE_PRINT_PREVIEW   "Zeigt ganze Seiten an.\nSeitenansicht"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Zeigt Programm-Informationen, Versionsnummer und Copyright an.\nInfo"
+    ID_APP_EXIT             "Verläßt die Anwendung; fragt, ob Dokumente gespeichert werden sollen.\nBeenden"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE2       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE3       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE4       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE5       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE6       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE7       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE8       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE9       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE10      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE11      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE12      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE13      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE14      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE15      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE16      "Öffnet dieses Dokument."
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Wechselt zum nächsten Fensterausschnitt.\nNächster Ausschnitt"
+    ID_PREV_PANE            "Springt zum vorherigen Fensterausschnitt zurück.\nVorheriger Ausschnitt"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Teilt das aktive Fenster in Ausschnitte.\nTeilen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Löscht die Markierung.\nLöschen"
+    ID_EDIT_CLEAR_ALL       "Löscht alles.\nAlles löschen"
+    ID_EDIT_COPY            "Kopiert die Markierung und überträgt sie in die Zwischenablage.\nKopieren"
+    ID_EDIT_CUT             "Entfernt die Markierung und überträgt sie in die Zwischenablage.\nAusschneiden"
+    ID_EDIT_FIND            "Sucht den angegebenen Text.\nSuchen"
+    ID_EDIT_PASTE           "Fügt den Inhalt der Zwischenablage ein.\nEinfügen"
+    ID_EDIT_REPEAT          "Wiederholt die letzte Aktion.\nWiederholen"
+    ID_EDIT_REPLACE         "Ersetzt einen bestimmten Text durch einen anderen.\nErsetzen"
+    ID_EDIT_SELECT_ALL      "Markiert das gesamte Dokument.\nAlles markieren"
+    ID_EDIT_UNDO            "Macht die letzte Aktion rückgängig.\nRückgängig"
+    ID_EDIT_REDO            "Wiederholt die vorher rückgängig gemachte Aktion.\nWiederherstellen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Blendet die Symbolleiste ein oder aus.\nSymbolleiste ein-/ausschalten"
+    ID_VIEW_STATUS_BAR      "Blendet die Statusleiste ein oder aus.\nStatusleiste ein-/ausschalten"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Ändert die Fenstergröße."
+    AFX_IDS_SCMOVE          "Ändert die Position des Fensters."
+    AFX_IDS_SCMINIMIZE      "Verkleinert das Fenster zu einem Symbol."
+    AFX_IDS_SCMAXIMIZE      "Vergrößert das Fenster zu voller Größe."
+    AFX_IDS_SCNEXTWINDOW    "Wechselt zum nächsten Dokumentfenster."
+    AFX_IDS_SCPREVWINDOW    "Wechselt zum vorherigen Dokumentfenster."
+    AFX_IDS_SCCLOSE         "Schließt das aktive Fenster und fordert zur Dokumentspeicherung auf."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Stellt das Fenster in seiner normalen Größe wieder her."
+    AFX_IDS_SCTASKLIST      "Aktiviert die Task-Liste."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Beendet die Seitenansicht.\nSeitenansicht beenden"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DATEI_OEFFNEN        "Lädt ein vorhandenes Spiel"
+    ID_DATEI_NEU            "Erstellt ein leeres Spielfeld"
+    ID_DATEI_VORLAGE        "Öffnet eine vorhandene Vorlage"
+    ID_DATEI_SAVE           "Speichert das aktuelle Spiel"
+    ID_DATEI_SAVE_V         "Speichert das aktuelle Spiel als Vorlage"
+    ID_DATEI_SAVE_U         "unter neuem Namen speichern"
+    ID_EXTRA_LOGDEL         "Protokoll löschen"
+    ID_EXTRA_FREEZE         "Vor Änderung schützen"
+    ID_EXTRA_MELT           "Änderungen freigeben"
+    ID_EXTRA_AGAIN          "Nochmal von vorne"
+    ID_SOLVE_DISPLAY        "Mögliche Zahlen anzeigen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EXTRA_CHECK          "Alle falschen Zahlen löschen"
+    ID_EXTRA_SOLVE          "Spiel auflösen"
+    ID_SOLVE_AUTO_ENTER     "Eindeutige Zahlen eintragen"
+    ID_DATEI_COMMENT        "Kommentar zu diesem Spiel eingeben / ändern"
+    ID_EXTRA_EINBLEND       "Alle Ausblendungen löschen"
+    ID_EXTRAS_KORRIGIEREN   "Alle falschen Zahlen löschen"
+    ID_EXTRA_COLOR          "Farben festlegen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EXTRA_AUSBLEND       "Zahleneingabe -> Ein-/Ausblenden"
+    ID_SOLVE_SURE_CAND      "Elimiert Zahlen, die in einer anderen Strasse sicher vorkommen, aus Feldern in der gleichen Zeile/Spalte"
+    ID_SOLVE_SINGLE         "Trägt Zahlen ein welche in einer Strasse sicher einmalig vorkommen"
+    ID_SOLVE_RANGE_CHECK    "Elimiert Zahlen in einer Strasse die ausserhalb des möglichen Bereichs sind"
+    ID_SOLVE_STRANDED       "Eliminert Zahlen welche vom Bereich kürzer sind als die Strasse"
+    ID_LSUNG_SPLITCOMPARTMENTS 
+                            "Analysiert Teillösungen unabhängig voneinander"
+    ID_SOLVE_MIND_GAP       "Eliminert extreme Zahlen aus anderen Feldern"
+    ID_SOLVE_NAKED_PAIR     "Elimiert Zahlenpaare aus anderen Feldern einer Zeile oder Spalte"
+    ID_EXTRA_SETTINGS       "Diverse Einstellungen"
+    ID_TIME_PAUSE           "Time Counter Stop / Run"
+    ID_CAPTURE              "Vom Bildschirm lesen"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Str8ts.rc2"                       // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "l.deu\afxres.rc"          // Standardkomponenten
+#include "l.deu\afxprint.rc"        // Ressourcen für Drucken/Seitenansicht
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
