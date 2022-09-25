@@ -1,2 +1,1 @@
-# Str8ts
-Str8ts puzzle
+compile with Visual Studio 2019
